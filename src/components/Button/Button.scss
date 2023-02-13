@@ -1,0 +1,116 @@
+@import '../../styles/index.scss';
+
+.Button {
+
+    &-easy {
+        @include borders(white, #7b7b7b);
+        @include buttons;
+        width: 35px;
+        height: 35px;
+        font-weight: bold;
+    }
+
+    &-medium {
+        @include borders(white, #7b7b7b);
+        @include buttons;
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+
+        @media (max-width: 425px) {
+            width: 25px;
+            height: 25px;
+            border-width: 3px;
+        }
+
+        @media (max-width: 375px) {
+            width: 20px;
+            height: 20px;
+            border-width: 3px;
+        }
+
+        @media (max-width: 320px) {
+            width: 18px;
+            height: 18px;
+            border-width: 2px;
+        }
+    }
+
+    &-hard {
+        @include borders(white, #7b7b7b);
+        @include buttons;
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+
+        @media (max-width: 768px) {
+            width: 23px;
+            width: 23px;
+            border-width: 3px;
+        }
+
+        @media (max-width: 425px) {
+            width: 19px;
+            height: 16px;
+            border-width: 2px;
+        }
+
+        @media (max-width: 375px) {
+            width: 19px;
+            height: 15px;
+            border-width: 2px;
+        }
+    }
+
+    &.visible {
+        border-color: #7b7b7b;
+        border-width: 1px;
+    }
+
+    span {
+        display: block;
+        margin-left: 4px;
+        font-size: 12px;
+
+        @media (max-width: 425px) {
+            font-size: 10px;
+        }
+    }
+
+    .red {
+        background: red;
+    }
+
+    &.value-1 {
+        color: blue;
+    }
+    &.value-2 {
+        color: green;
+    }
+    &.value-3 {
+        color: red;
+    }
+    &.value-4 {
+        color: rgb(0, 0, 90);
+    }
+    &.value-5 {
+        color: brown;
+    }
+    &.value-6 {
+        color: aqua;
+    }
+    &.value-7 {
+        color: black;
+    }
+    &.value-8 {
+        color: white;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 11px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 10px;
+    }
+}
