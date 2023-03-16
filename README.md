@@ -1,6 +1,7 @@
 # MINESWEEPER REACT GAME
 
 Игра сапёр, написанная на React.
+Live demo : https://valvalov22.github.io/minesweeper/
 
 ## Используемый стэк
 
